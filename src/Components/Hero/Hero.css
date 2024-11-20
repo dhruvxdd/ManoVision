@@ -1,0 +1,26 @@
+/* hero.css */
+.breathe-ball {
+    width: 100px;
+    height: 100px;
+    background-color: #fddcdc;
+    border-radius: 50%;
+    transition: all 20s ease;
+    position: relative;
+  }
+  
+  .breathe-ball.expand {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .breathe-ball.shrink {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .breathe-text {
+    font-size: 1.5rem;
+    color: #f56565;
+    text-align: center;
+  }
+  
