@@ -88,6 +88,7 @@ const Twitterauth = () => {
           <h2 className="text-3xl font-bold text-center py-4">Twitter Authentication</h2>
           <p className="text-center mb-6">
             Please click on this button and grant your Twitter data access for precise analysis 😊
+                <br/>"(please make sure that the account is not restricted)"
           </p>
 
           <div className="flex flex-col mb-4">
