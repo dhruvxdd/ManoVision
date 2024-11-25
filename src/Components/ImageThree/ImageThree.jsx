@@ -6,7 +6,7 @@ const ImageThree = () => (
         className='relative h-screen'
         blur={0}
         bgImage={three}
-        strength={800}
+        strength={100}
         bgImageStyle={{ objectFit: 'cover', height: '100vh', width: '100vw' }}
     >
         {/* Centered content */}
