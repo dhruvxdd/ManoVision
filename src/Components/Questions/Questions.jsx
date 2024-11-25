@@ -83,6 +83,8 @@ const Questions = () => {
                     onSubmit={handleSubmit}
                 >
                     <h2 className='text-4xl font-bold text-center py-4 text-white'>मनो-Vision Gauge (MVG)</h2>
+                    <h1 className='text-1xl font-mono text-center  py-4 text-white'>Over the last 2 weeks, how often have you been
+                    bothered by any of the following problems?</h1>
 
                     <div className='space-y-6 text-zinc-200'>
                         {[
@@ -97,11 +99,11 @@ const Questions = () => {
                             'Thoughts of being better off dead or self-harm',
                         ].map((question, index) => (
                             <div key={index}>
-                                <label className='block mb-2 text-xl'>{`${index + 1}. ${question}`}</label>
+                                <label className='block mb-1 text-lg font-mono'>{`${index + 1}. ${question}`}</label>
                                 <div className='flex space-x-4'>
                                     {['Not at all', 'Several days', 'More than half the days', 'Nearly every day'].map(
                                         (option) => (
-                                            <div key={option} className='flex items-center'>
+                                            <div key={option} className='flex items-center '>
                                                 <input
                                                     type='radio'
                                                     id={`question-${index}-${option}`}
@@ -113,7 +115,7 @@ const Questions = () => {
                                                 />
                                                 <label
                                                     htmlFor={`question-${index}-${option}`}
-                                                    className='text-sm'
+                                                    className='text-xs font-mono'
                                                 >
                                                     {option}
                                                 </label>
