@@ -170,12 +170,7 @@ const HeaderSidebar = () => {
           <Link to="/result" className="py-3 font-mono hover:bg-blue-50">
             Result
           </Link>
-          <Link to="/" className="py-3 font-mono hover:bg-blue-50"  onClick={() => {
-        localStorage.removeItem('token');
-        localStorage.removeItem('userEmail');
-      }}>
-            Home
-          </Link>
+          
           <Link
             to="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response"
             className="py-3 font-mono hover:bg-blue-50"
@@ -184,6 +179,12 @@ const HeaderSidebar = () => {
           </Link>
           <Link to="/suggestions" className="py-3 font-mono hover:bg-blue-50">
             Suggestions
+          </Link>
+          <Link to="/" className="py-3 font-mono hover:bg-blue-50"  onClick={() => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('userEmail');
+      }}>
+            Home
           </Link>
         </div>
 
